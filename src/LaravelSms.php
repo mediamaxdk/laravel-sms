@@ -8,7 +8,7 @@ class LaravelSms
     public function send()
     {
         $x = $this->sendSMS(array('4528353546'), "test sms fra package");
-        return $x;
+        return "SMS was sent";
     }
 
     function sendSMS($recipients, $msg) {
